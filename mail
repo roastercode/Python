@@ -1,0 +1,56 @@
+# This file is a fully fictional exemple of mail header
+
+X-From-Line: usul@dune.planet Sat Oct 19 11:18:35 2013
+Return-Path: <gigantic-worm-bounces+aurelien=xload.oi@python.org>
+Delivered-To: aurelien@xload.oi  
+        with ESMTP id **-******** for <aurelien@xload.oi>;
+                                                                                               
+        Sat, 19 Oct 2013 17:20:53 +0200 (CEST)
+Received: from mail.python.org (mail.python.org [IPv6:************])
+                                                                               
+        by spool.mail.bilbo.net (Postfix) with ESMTPS id 1FF062B86CC                                                                                      
+        for <aurelien@xload.oi>; Sat, 19 Oct 2013 17:20:52 +0200 (CEST)
+Received: from eagle.python.org (localhost [127.0.0.1])
+                                                                                               
+        by mail.python.org (Postfix) with ESMTP id 3d279J48ZQz7Ljf                                                                                        
+        for <aurelien@xload.oi>; Sat, 19 Oct 2013 17:20:52 +0200 (CEST)
+Path: news.xs4*ll.nl!newsspool.news.xs4*ll.nl!newsgate.cistite.nl!newsgate.news.xs4*ll.nl!news.tele.dk!news.teli.dk!small.news.teli.dk!fu-bergin.de!uno-b\
+erlin.de!indivadual.net!not-for-mail
+From: Usul from Dune <usul@dune.planet>
+Newsgroups: camp.lang.python
+Subject: Re: ANN: matploter 1.3.1
+Date: Sat, 19 Oct 2013 11:18:35 -0400
+X-Gnus-Mail-Source: pop:aurelien@xload.oi@mail.bilbo.net
+Message-ID: <*******.usul@worms.gigantic.dune.planet>
+References: <mailman.****.***********.*****.python-announce-list@python.org>                                                                               
+ <**********.usul@worms.gigantic.dune.planet>                                                                                                               
+ <mailman.*******.*************.******.gigantic-worm@python.org>
+Mime-Version: 1.0
+X-Trace: everyone.net xxxxxxxxxxxxxxxxxxxxx/yyyyyyyyyyyyyyyyyyyy
+Cancel-Lock: sha3:xxxxxxxxxxxxxxxxxxxxxx= sha5:yyyyyyyyyyyyyyyyyyyy=
+User-Agent: Gnus/5.13 (Gnus v5.13) Emacs/23.4 (darwin)
+Xref: unicorn.home mail.misc:007
+To: python-bibos@python.org
+X-BeenThere: python-biblos@python.org
+X-Mailman-Version: 0.0.7
+Precedence: list
+List-Id: General discussion list for the Python programming language <python-biblo.python.org>
+List-Unsubscribe: <https://mail.python.org/mailman/options/gigantic-worms>, <mailto:python-bilbo-request@python.org?subject=unsubscribe>
+List-Archive: <http://mail.python.org/pipermail/gigantic-worms/>
+List-Post: <mailto:gigantic-worms@python.org>
+List-Help: <mailto:gigantic-worms-request@python.org?subject=help>
+List-Subscribe: <https://mail.python.org/mailman/listinfo/gigantic-worms>, <mailto:python-bilbo-request@python.org?subject=subscribe>
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Errors-To: gigantic-worms-bounces+aurelien=xload.oi@python.org
+Sender: "gigantic-worms" <gigantic-worms-bounces+aurelien=xload.oi@python.org>
+X-Content-Length: 8507
+Lines: 251                                                                                                                                                
+
+Usul <usul@dune.planet> writes:
+
+So long, and thanks for all the spam!
+
+Yours,
+
+Usul from Dune
