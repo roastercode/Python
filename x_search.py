@@ -16,4 +16,5 @@ for line in fileinput.input():
         print X
         
 
+# replace X between ]+X[ by the word you wish
 # $ python x_search.py <file>
