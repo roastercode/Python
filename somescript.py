@@ -4,7 +4,7 @@
 # Author    : XL04D
 # Mail      : aurelien@xload.IO
 # Project   : somescript
-# a bit of script
+# word counter
 
 import sys
 text = sys.stdin.read()
