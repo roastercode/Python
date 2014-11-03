@@ -1,9 +1,20 @@
-#!/usr/bin python
-# -*- coding: utf-8 -*-
-# License   : GNU GPL v3 or later
-# Author    : aurelien desbrieres
-# Mail      : aurelien@hackers.guru
-# Project   : ButtonPlace
+#!/usr/bin/env python3
+# License    : GNU GPL v3 or later
+# Author     : Aurélien DESBRIERES
+# Mail       : aurelien@hackers.camp
+# Project    : ButtonInfo
+# Created on : Mon Nov 3 19:47:27 2014
+#
+# References
+#
+# python3 env
+#
+#
+# Course material
+#
+# 
+#
+#
 
 import wx
 
