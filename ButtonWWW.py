@@ -1,10 +1,19 @@
-#!/usr/bin python
-# -*- coding: utf-8 -*-
-# License   : GNU GPL v3 or later
-# Author    : aurelien desbrieres
-# Mail      : aurelien@hackers.guru
-# Project   : ButtonWWW
-# Open file from the WWW
+#!/usr/bin/env python3
+# License    : GNU GPL v3 or later
+# Author     : Aurélien DESBRIERES
+# Mail       : aurelien@hackers.camp
+# Project    : ButtonWWW
+# Created on : Wed Nov 5 08:48:26 2014
+#
+# References
+#
+# python3 env
+#
+#
+# Course material
+#
+# 
+
 
 import wx
 import urllib
