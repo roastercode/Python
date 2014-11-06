@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*- 
 # License    : GNU GPL v3 or later
 # Author     : Aurélien DESBRIERES
 # Mail       : aurelien@hackers.camp
