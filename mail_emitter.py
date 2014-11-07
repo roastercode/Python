@@ -1,12 +1,19 @@
-#!/usr/bin python
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-# License   : GNU GPL v3 or later
-# Author    : XL04D
-# Mail      : aurelien@xload.IO
-# Project   : Mail Emitter
-# Find who emit the mail
-# It the mail comes from a mailing list, it will give you
-# the name of the emitter (which is not the sender)
+# License    : GNU GPL v3 or later
+# Author     : Aurélien DESBRIERES
+# Mail       : aurelien@hackers.camp
+# Project    : mail emitter
+# Created on : 
+#
+# References
+#
+# python3 env
+#
+#
+# Course material
+#
+#
 
 import fileinput, re
 
