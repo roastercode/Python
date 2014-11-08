@@ -21,7 +21,7 @@ import turtle
 # with an angle on make turn the turtle
 
 
-def square(length):
+def octo(length):
     "have the turtle draw a square of side <length>"
     for side in range(8):
         turtle.forward(length)
@@ -33,7 +33,7 @@ turtle.reset()
 
 # define the lenght of each range
 
-square(100)
+octo(100)
 
 
 # stand for the user mouse clic to exit
