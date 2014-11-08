@@ -19,7 +19,6 @@ import turtle
 
 # define function that draw a number of side (range)
 # with an angle on make turn the turtle
-On commence par définir une fonction qui dessine un carré de coté `length`
 
 
 def square(length):
