@@ -5,6 +5,8 @@
 # Project    : ButtonGUI
 # Created on : Mon Nov  3 19:47:27 2014
 #
+# Write with Emacs-Nox
+#
 # References
 #
 # python3 env
