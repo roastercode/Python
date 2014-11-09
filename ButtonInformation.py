@@ -5,6 +5,8 @@
 # Project    : ButtonInformation.py
 # Created on : Mon Nov 3 19:50:58 2014
 #
+# Write with Emacs-Nox
+#
 # References
 #
 # python3 env
