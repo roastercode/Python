@@ -15,14 +15,13 @@
 #
 # Course material
 #
-# MOOC INRIA Turtle
+# MOOC INRIA box
 #
 
 import wx
 
 app = wx.App()
 win  = wx.Frame(None, title="Simple Editor", size=(410, 335))
-
 bkg = wx.Panel(win)
 
 loadButton = wx.Button(bkg, label='0pen')
