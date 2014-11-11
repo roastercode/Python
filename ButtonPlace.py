@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 # License    : GNU GPL v3 or later
 # Author     : Aurélien DESBRIERES
 # Mail       : aurelien@hackers.camp
@@ -7,7 +7,7 @@
 #
 # References
 #
-# python3 env
+# python2 env
 #
 #
 # Course material
