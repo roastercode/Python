@@ -1,19 +1,19 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*- 
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 # License    : GNU GPL v3 or later
 # Author     : Aurélien DESBRIERES
 # Mail       : aurelien@hackers.camp
-# Project    : Shebang
-# Created on : Sun Nov  2 10:20:34 2014
+# Project    : Python Box
+# Created on : Thu Nov 13 12:01:03 2014
+#
+# Write with Emacs-Nox
 #
 # References
-#
-# python3 env
 #
 #
 # Course material
 #
-# 
+#
 #
 # Here is my SheBang model for all my stuff
 #
