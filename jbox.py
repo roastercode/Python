@@ -16,10 +16,12 @@
 # Python box made of Javax
 #
 
-from javax.Swing import *
+# use jython to execute this code
+
+from javax.swing import *
 import sys
 
-def hello(event): print Hello, world!
+def hello(event): print 'Hello, world! '
 btn = JButton('Hello')
 btn.actionPerformed = hello
 
