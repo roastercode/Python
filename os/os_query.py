@@ -22,3 +22,15 @@
 # with importdb.py you can find at github.com/k0d3x
 #
 
+import sqlite3, sys
+
+conn = sqlite3.connect('os_sys.db')
+curs = conn.cursor()
+
+query = 'SELECT * FROM faif WHERE %s' % sys.argv[1]
+print query
+curs.execute(query)
+names = [f[0] for f in curs.description]
+for row in curs.fetchall():
+    print '%s: %s' % pair
+    print
