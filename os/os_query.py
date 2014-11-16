@@ -12,6 +12,7 @@
 #
 # import sqlite3 def sys curs cursors connect
 #
+#
 # Course material
 #
 # Python book - Own modification
