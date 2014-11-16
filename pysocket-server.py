@@ -10,7 +10,7 @@
 #
 # References
 #
-# socket gethostname
+# socket gethostname socket.socket.connect
 #
 #
 # Course material
