@@ -23,7 +23,13 @@
 # Socket "Information Channel"
 #
 
-import socket()
+# load from a terminal
+#    $ python pysocket-server.py
+# load from another terminal
+#    $ python pysocket-client.py
+#
+
+import socket
 
 s = socket.socket()
 
