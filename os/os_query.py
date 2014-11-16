@@ -10,7 +10,7 @@
 #
 # References
 #
-# import sqlite3 def sys curs cursors
+# import sqlite3 def sys curs cursors connect
 #
 # Course material
 #
