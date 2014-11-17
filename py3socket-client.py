@@ -15,7 +15,7 @@
 #
 # Course material
 #
-# Python book - Own modification
+# Python Documentation - Python book - Own modification
 #
 
 #
