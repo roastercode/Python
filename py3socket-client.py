@@ -4,7 +4,7 @@
 # Author     : Aurélien DESBRIERES
 # Mail       : aurelien@hackers.camp
 # Project    : Socket Server
-# Created on : Mon Nov 17 17:36:27 2014
+# Created on : Mon Nov 17 18:35:19 2014
 #
 # Write with Emacs-Nox
 #
@@ -15,7 +15,7 @@
 #
 # Course material
 #
-# Python3 documentation - Own modification
+# Python book - Own modification
 #
 
 #
@@ -23,29 +23,20 @@
 # Socket "Information Channel"
 #
 
-# This python3 client works with the Python2 solution of the
-# pysocket-server.py write
-#
 # load from a terminal
-#    $ python pysocket-server.py
+#    $ python3 py3socket-server.py
 # load from another terminal
-#    $ python pysocket-client.py
+#    $ python3 py3socket-client.py
 #
 
 import socket
-import sys
 
-HOST, PORT = "localhost", 1234
-data = " ".join(sys.argv[1:])
+s = socket.socket()
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+host = socket.gethostname()
+port = 1234
 
-sock.connect((HOST, PORT))
-sock.sendall(bytes(data + "\n", "utf-8"))
+s.connect((host, port))
+s.recv(1024)
 
-received = str(sock.recv(1024), "utf-8")
-
-sock.close()
-
-print("Sent:     {}".format(data))
-print("Received: {}".format(received))
+print ("Welcome on board!")
