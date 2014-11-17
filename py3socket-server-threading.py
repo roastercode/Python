@@ -35,7 +35,8 @@ class Handler(StreamRequestHandler):
     def handle(self):
         addr = self.request.getpeername()
         print ('Connection from'), addr
-        self.wfile.write('Welcome on board!')
+        s = 'Welcome on board!'
+        self.wfile.write(bytes(s, 'UTF-8'))
 
 server = Server(('', 1234), Handler)
-server.serve_forever()
+server.serve_forever() 
