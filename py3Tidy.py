@@ -4,7 +4,7 @@
 # Author     : Aurélien DESBRIERES
 # Mail       : aurelien@hackers.camp
 # Project    : Tidy
-# Created on : 
+# Created on : Wed Nov 19 22:10:00 2014
 #
 # Write with Emacs-Nox
 #
