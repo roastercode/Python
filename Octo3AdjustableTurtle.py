@@ -4,19 +4,19 @@
 # Author     : Aurélien DESBRIERES
 # Mail       : aurelien@hackers.camp
 # Project    : Octo Adjustable Turtle
-# Created on : Sat Nov 8 14:30:20 2014
+# Created on : Sat Nov 22 07:19:45 2014
 #
 # Write with Emacs-Nox
 #
 #
 # References
 #
-# python2 env
-# octo turtle
+# python3 env
+# octo turtle range
 #
 # Course material
 #
-# MOOC INRIA Turtle
+# MOOC INRIA Turtle - WWW - Python documentation
 #
 
 import turtle
