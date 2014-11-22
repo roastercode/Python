@@ -25,11 +25,11 @@ text = urlopen('https://python.org/community/jobs').read()
 soup = BeautifulSoup(text)
 
 jobs = set()
-for header in soup ('h1'):
+for header in soup('h1'):
     links = header('a', 'reference')
-    if not links: continue
+    if not links:
+        continue
     link = links[0]
     jobs.add('%s (%s)' % (link.string, link['href']))
 
-print ('\n'.join(sorted(jobs, key=lambda s: s.lower())))
-
+print('\n'.join(sorted(jobs, key=lambda s: s.lower())))
