@@ -15,7 +15,7 @@
 # Course material
 #
 # Python books - Own modification - Python Documentation - WWW
-#
+# 
 
 
 from urllib.request import urlopen
