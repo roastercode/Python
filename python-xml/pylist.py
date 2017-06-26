@@ -25,24 +25,22 @@ class MovieHandler( xml.sax.ContentHandler ):
         def startElement(self, tag, attributes):
             self.CurrentData = tag
             if tag == "movie":
-                print("*****Movie*****")
+                print ("*****Movie*****")
                 title = attributes["title"]
-                print("Title:", title)
+                print ("Title:", title)
 
                 # Call when an elements ends
                 def endElement(self, tag):
                     if self.CurrentData == "type":
-                        print("Type:", self.type)
+                        print ("Type:", self.type)
                     elif self.CurrentData == "format":
-                        print("Format:", self.format)
+                        print ("Format:", self.format)
                     elif self.CurrentData == "year":
-                        print("Year:", self.year)
-                    elif self.CurrentData == "rating":
-                        print("Rating:", self.rating)
+                        print ("Year:", self.year)
                     elif self.CurrentData == "stars":
-                        print("Stars:", self.stars)
+                        print ("Stars:", self.stars)
                     elif self.CurrentData == "description":
-                        print("Description:", self.description)
+                        print ("Description:", self.description)
                         self.CurrentData = ""
 
                         # Call when a character is readline
@@ -51,23 +49,24 @@ class MovieHandler( xml.sax.ContentHandler ):
                                 self.type = content
                             elif self.CurrentData == "format":
                                 self.format = content
+                            elif self.CurrentData == "year":
+                                self.year = content
                             elif self.CurrentData == "rating":
                                 self.rating = content
                             elif self.CurrentData == "stars":
-                                self.stars = content
-                            elif self.CurrentData == "Description":
+                                self.rating = content
+                            elif self.CurrentData == "description":
                                 self.description = content
 
-                                if ( __name__ == "__main__"):
+                                if (__name__ == "__main__"):
 
                                     # create an XMLReader
                                     parser = xml.sax.make_parser()
                                     # turn off namespaces
-                                    parser.setFeature(xml.sax.handler.feature_namespaces, 0)
+                                    parser.selfFeature(xml.sax.handler.feature_namespaces, 0)
 
-                                    # override the default ContextHanddler
+                                    # override the default ContextHandler
                                     Handler = MovieHandler()
                                     parser.setContentHandler( Handler )
 
-                                    parser.parse("movies.xml")
-                                    
+                                    parser.parse("list.xml")
