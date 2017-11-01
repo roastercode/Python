@@ -1,5 +1,5 @@
-""" This module is for test """
 #!/usr/bin/env python3
+""" This module is for test """
 # License    : GNU GPL v3 or later
 # Author     : Aurélien DESBRIERES
 # Mail       : aurelien@hackers.camp
