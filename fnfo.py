@@ -8,6 +8,8 @@
 # Modified   : Wed Nov 1 2017
 # Write with Emacs-Nox
 #
+# Pylint verified 10.00
+#
 """ Python experimentations """
 
 import math
