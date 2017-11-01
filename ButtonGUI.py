@@ -1,3 +1,4 @@
+""" This module is for test """
 #!/usr/bin/env python3
 # License    : GNU GPL v3 or later
 # Author     : Aurélien DESBRIERES
@@ -10,11 +11,7 @@
 # References
 #
 # python3 env
-#
-#
-# Course material
-#
-#
+
 #
 
 
