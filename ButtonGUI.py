@@ -1,6 +1,8 @@
 #!/usr/bin/env python
-""" This module is for test """
 # License    : GNU GPL v3 or later
+
+""" This module is for test """
+
 import wx
 
 def load(event):
