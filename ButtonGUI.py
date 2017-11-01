@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """ This module is for test """
 # License    : GNU GPL v3 or later
-# Author     : Aurélien DESBRIERES
+# Author     : Aurelien DESBRIERES
 # Mail       : aurelien@hackers.camp
 # Project    : ButtonGUI
 # Created on : Mon Nov  3 19:47:27 2014
@@ -12,6 +12,7 @@
 #
 # python3 env
 #
+# YOU MUST INSTALL wxPython on your operating system to make that works!
 
 
 import wx
