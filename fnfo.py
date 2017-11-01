@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 # License    : GNU GPL v3 or later
 # Author     : Aurélien DESBRIERES
