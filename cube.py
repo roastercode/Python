@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 # Mail       : aurelien@hackers.camp
 # Project    : Python Box
@@ -21,6 +21,7 @@
     - remove unecessary pointlist
     - pylint correction:
          . def name corrections
+    - moved to python3 (need pip3 install pygame)
 
 http://codeNtronix.com
 
