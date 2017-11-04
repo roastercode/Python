@@ -14,8 +14,13 @@
 
  // Modified by Aurélien Desbrières <aurelien@hackers.camp>
  // Modification from the original:
-    - remove the colors and change by the lines
-         . pygame.draw.line
+    - remove the colors
+    - change library
+         . pygame.draw.polygon by pygame.draw.line
+    - self.screen.fill to 0 0 0 (black)
+    - remove unecessary pointlist
+    - pylint correction:
+         . def name corrections
 
 http://codeNtronix.com
 
@@ -24,46 +29,47 @@ import sys
 import math
 import pygame
 from operator import itemgetter
+print(sys.path)
 
 
 class Point3D:
 
     def __init__(self, x=0, y=0, z=0):
-        self.x, self.y, self.z = float(x), float(y), float(z)
+        self.x_axis, self.y_axis, self.z_axis = float(x), float(y), float(z)
 
-    def rotateX(self, angle):
+    def rotate_x(self, angle):
         """ Rotates the point around the X axis by the given angle in degrees. """
         rad = angle * math.pi / 180
         cosa = math.cos(rad)
         sina = math.sin(rad)
-        y = self.y * cosa - self.z * sina
-        z = self.y * sina + self.z * cosa
-        return Point3D(self.x, y, z)
+        y = self.y_axis * cosa - self.z_axis * sina
+        z = self.y_axis * sina + self.z_axis * cosa
+        return Point3D(self.x_axis, y, z)
 
-    def rotateY(self, angle):
+    def rotate_y(self, angle):
         """ Rotates the point around the Y axis by the given angle in degrees. """
         rad = angle * math.pi / 180
         cosa = math.cos(rad)
         sina = math.sin(rad)
-        z = self.z * cosa - self.x * sina
-        x = self.z * sina + self.x * cosa
-        return Point3D(x, self.y, z)
+        z = self.z_axis * cosa - self.x_axis * sina
+        x = self.z_axis * sina + self.x_axis * cosa
+        return Point3D(x, self.y_axis, z)
 
-    def rotateZ(self, angle):
+    def rotate_z(self, angle):
         """ Rotates the point around the Z axis by the given angle in degrees. """
         rad = angle * math.pi / 180
         cosa = math.cos(rad)
         sina = math.sin(rad)
-        x = self.x * cosa - self.y * sina
-        y = self.x * sina + self.y * cosa
-        return Point3D(x, y, self.z)
+        x = self.x_axis * cosa - self.y_axis * sina
+        y = self.x_axis * sina + self.y_axis * cosa
+        return Point3D(x, y, self.z_axis)
 
     def project(self, win_width, win_height, fov, viewer_distance):
         """ Transforms this 3D point to 2D using a perspective projection. """
-        factor = fov / (viewer_distance + self.z)
-        x = self.x * factor + win_width / 2
-        y = -self.y * factor + win_height / 2
-        return Point3D(x, y, self.z)
+        factor = fov / (viewer_distance + self.z_axis)
+        x = self.x_axis * factor + win_width / 2
+        y = -self.y_axis * factor + win_height / 2
+        return Point3D(x, y, self.z_axis)
 
 
 class Simulation:
@@ -93,13 +99,6 @@ class Simulation:
         self.faces = [(0, 1, 2, 3), (1, 5, 6, 2), (5, 4, 7, 6),
                       (4, 0, 3, 7), (0, 4, 5, 1), (3, 2, 6, 7)]
 
-        # Define colors for each face
-        # self.colors = [(255, 0, 255), (255, 0, 0), (0, 255, 0),
-        #                (0, 0, 255), (0, 255, 255), (255, 255, 0)]
-
-        self.colors = [(255, 255, 255), (255, 255, 255), (255, 255, 255),
-                       (255, 255, 255), (255, 255, 255), (255, 255, 255)]
-
         self.angle = 0
 
     def run(self):
@@ -111,7 +110,7 @@ class Simulation:
                     sys.exit()
 
             self.clock.tick(50)
-            self.screen.fill((0, 32, 0))
+            self.screen.fill((0, 0, 0))
 
             # It will hold transformed vertices.
             t = []
@@ -119,8 +118,8 @@ class Simulation:
             for v in self.vertices:
                 # Rotate the point around X axis, then around Y axis, and
                 # finally around Z axis.
-                r = v.rotateX(self.angle).rotateY(
-                    self.angle).rotateZ(self.angle)
+                r = v.rotate_x(self.angle).rotate_y(
+                    self.angle).rotate_z(self.angle)
                 # Transform the point from 3D to 2D
                 p = r.project(self.screen.get_width(),
                               self.screen.get_height(), 256, 4)
@@ -131,7 +130,8 @@ class Simulation:
             avg_z = []
             i = 0
             for f in self.faces:
-                z = (t[f[0]].z + t[f[1]].z + t[f[2]].z + t[f[3]].z) / 4.0
+                z = (t[f[0]].z_axis + t[f[1]].z_axis +
+                     t[f[2]].z_axis + t[f[3]].z_axis) / 4.0
                 avg_z.append([i, z])
                 i = i + 1
 
@@ -140,18 +140,14 @@ class Simulation:
             for tmp in sorted(avg_z, key=itemgetter(1), reverse=True):
                 face_index = tmp[0]
                 f = self.faces[face_index]
-                pointlist = [(t[f[0]].x, t[f[0]].y), (t[f[1]].x, t[f[1]].y),
-                             (t[f[1]].x, t[f[1]].y), (t[f[2]].x, t[f[2]].y),
-                             (t[f[2]].x, t[f[2]].y), (t[f[3]].x, t[f[3]].y),
-                             (t[f[3]].x, t[f[3]].y), (t[f[0]].x, t[f[0]].y)]
                 pygame.draw.line(self.screen, (255, 255, 255),
-                                 (t[f[0]].x, t[f[0]].y), (t[f[1]].x, t[f[1]].y))
+                                 (t[f[0]].x_axis, t[f[0]].y_axis), (t[f[1]].x_axis, t[f[1]].y_axis))
                 pygame.draw.line(self.screen, (255, 255, 255),
-                                 (t[f[1]].x, t[f[1]].y), (t[f[2]].x, t[f[2]].y))
+                                 (t[f[1]].x_axis, t[f[1]].y_axis), (t[f[2]].x_axis, t[f[2]].y_axis))
                 pygame.draw.line(self.screen, (255, 255, 255),
-                                 (t[f[2]].x, t[f[2]].y), (t[f[3]].x, t[f[3]].y))
+                                 (t[f[2]].x_axis, t[f[2]].y_axis), (t[f[3]].x_axis, t[f[3]].y_axis))
                 pygame.draw.line(self.screen, (255, 255, 255),
-                                 (t[f[3]].x, t[f[3]].y), (t[f[0]].x, t[f[0]].y))
+                                 (t[f[3]].x_axis, t[f[3]].y_axis), (t[f[0]].x_axis, t[f[0]].y_axis))
 
             self.angle += 1
 
