@@ -5,7 +5,7 @@
 # Modified   : Nov 3 2017
 # Write with Emacs-Nox
 #
-# Pylint verified 7.40 / 10.00
+# Pylint verified 7.81 / 10.00
 
 """
  Simulation of a rotating 3D Cube
@@ -13,6 +13,7 @@
 
  // Modified by Aurélien Desbrières <aurelien@hackers.camp>
  // Modification from the original:
+    - add a sheband to make it executable by the system
     - remove the colors
     - change library
          . pygame.draw.polygon by pygame.draw.line
@@ -24,18 +25,19 @@
     - adapt background size to object size
     - make some debug with
          . import ipdb; ipdb.set_trace()
-
-http://codeNtronix.com
+    - correction
+         . import order
 """
 
 import sys
 import math
-import pygame
 from operator import itemgetter
+import pygame
 print(sys.path)
 
 
 class Point3D:
+    """ cube definition  """
 
     def __init__(self, x=0, y=0, z=0):
         self.x_axis, self.y_axis, self.z_axis = float(x), float(y), float(z)
@@ -76,13 +78,14 @@ class Point3D:
 
 
 class Simulation:
+    """ cube action  """
 
     def __init__(self, win_width=300, win_height=300):
         pygame.init()
 
         self.screen = pygame.display.set_mode((win_width, win_height))
         pygame.display.set_caption(
-            "Simulation of a rotating 3D Cube (http://codeNtronix.com)")
+            "Simulation of a rotating 3D Cube")
 
         self.clock = pygame.time.Clock()
 
