@@ -5,8 +5,7 @@
 # Modified   : Nov 3 2017
 # Write with Emacs-Nox
 #
-# Pylint verified 10.00
-#
+# Pylint verified 7.40 / 10.00
 
 """
  Simulation of a rotating 3D Cube
@@ -22,10 +21,13 @@
     - pylint correction:
          . def name corrections
     - moved to python3 (need pip3 install pygame)
+    - adapt background size to object size
+    - make some debug with
+         . import ipdb; ipdb.set_trace()
 
 http://codeNtronix.com
-
 """
+
 import sys
 import math
 import pygame
@@ -75,7 +77,7 @@ class Point3D:
 
 class Simulation:
 
-    def __init__(self, win_width=640, win_height=480):
+    def __init__(self, win_width=300, win_height=300):
         pygame.init()
 
         self.screen = pygame.display.set_mode((win_width, win_height))
