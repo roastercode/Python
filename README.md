@@ -1,5 +1,5 @@
-      Python is a repo for my own experimentation throught learning Python
-      ====================================================================
+Python experimentations
+=======================
 
 ![3D Cube in Python3](gif/cube.gif)
 
@@ -22,4 +22,4 @@ Search and kill the process will clear the situation.
 
 
 
-              sudo netstat -antup
+### sudo netstat -antup
