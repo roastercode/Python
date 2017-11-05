@@ -5,16 +5,6 @@
 
 Last a 3D Python3 cube all rewritten and corrected with pylint-3.6
 
-Most of the stuff in that repo is my own works because of modification bring
-on the original code.
-
-Most of time the original code was written in python2 and just not works in
-python3.
-
-All of what could be considered as my own works is under GNU GPL V3 or later.
-
-Aurélien DESBRIÈRES
-aurelien@hackers.camp
 
 
 ________________________________________________________________________________
