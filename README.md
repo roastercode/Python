@@ -1,6 +1,9 @@
       Python is a repo for my own experimentation throught learning Python
       ====================================================================
 
+![3D Cube in Python3](gif/cube.gif)
+
+Last a 3D Python3 cube all rewritten and corrected with pylint-3.6
 
 Most of the stuff in that repo is my own works because of modification bring
 on the original code.
@@ -30,5 +33,3 @@ Search and kill the process will clear the situation.
 
 
               sudo netstat -antup
-
-

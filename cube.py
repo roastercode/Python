@@ -5,14 +5,13 @@
 # Modified   : Nov 3 2017
 # Write with Emacs-Nox
 #
-# Pylint verified 9.86 / 10.00
+# Pylint-3.6 verified 9.86 / 10.00
 
 """
  Simulation of a rotating 3D Cube
- Developed by Leonel Machava <leonelmachava@gmail.com>
-
- // Modified by Aurélien Desbrières <aurelien@hackers.camp>
- // Modification from the original:
+ Developed by Leonel   Machava    <leonelmachava@gmail.com>
+ Modified  by Aurélien Desbrières <aurelien@hackers.camp>
+ // Modification from the originalxs:
     - add a sheband to make it executable by the system
     - remove the colors
     - change library
@@ -27,7 +26,7 @@
          . import ipdb; ipdb.set_trace()
     - correction
          . import order
-         . pylint improvement
+         . pylint improvement (more the 5 point on 10.00!
 """
 
 import sys
