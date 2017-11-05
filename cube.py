@@ -175,5 +175,5 @@ class Simulation(Point3D):
 
             pygame.display.flip()
 
-if __name__ == "__main__":
-    Simulation().run()
+            if __name__ == "__main__":
+                Simulation().run()
