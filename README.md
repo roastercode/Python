@@ -1,17 +1,10 @@
-      Python is a repo for my own experimentation throught learning Python
-      ====================================================================
+Python experimentations
+=======================
 
+![3D Cube in Python3](gif/cube.gif)
 
-Most of the stuff in that repo is my own works because of modification bring
-on the original code.
+Last a 3D Python3 cube all rewritten and corrected with pylint-3.6
 
-Most of time the original code was written in python2 and just not works in
-python3.
-
-All of what could be considered as my own works is under GNU GPL V3 or later.
-
-Aurélien DESBRIÈRES
-aurelien@hackers.camp
 
 
 ________________________________________________________________________________
@@ -29,6 +22,4 @@ Search and kill the process will clear the situation.
 
 
 
-              sudo netstat -antup
-
-
+### sudo netstat -antup

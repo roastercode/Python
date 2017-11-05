@@ -1,60 +1,47 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # License    : GNU GPL v3 or later
-# Author     : Aurélien DESBRIERES
-# Mail       : aurelien@hackers.camp
-# Project    : ButtonGUI
-# Created on : Mon Nov  3 19:47:27 2014
-#
-# Write with Emacs-Nox
-#
-# References
-#
-# python3 env
-#
-#
-# Course material
-#
-#
-#
 
+""" This module is for test """
 
 import wx
 
+
 def load(event):
-    file = open(filename.GetValue())
-    contents.SetValue(file.read())
+    file = open(FILENAME.GetValue())
+    CONTENTS.SetValue(file.read())
     file.close()
+
 
 def save(event):
-    file = open(filename.GetValue(), 'w')
-    file.write(contents.GetValue())
+    file = open(FILENAME.GetValue(), 'w')
+    file.write(CONTENTS.GetValue())
     file.close()
 
-app = wx.App()
-win = wx.Frame(None, title="Simple Editor", size=(410, 335))
+APP = wx.App()
+WIN = wx.Frame(None, title="Simple Editor", size=(410, 335))
 
-bkg = wx.Panel(win)
+BKG = wx.Panel(WIN)
 
-loadButton = wx.Button(bkg, label='0pen')
-loadButton.Bind(wx.EVT_BUTTON, load)
+LOAD_BUTTON = wx.Button(BKG, label='0pen')
+LOAD_BUTTON.Bind(wx.EVT_BUTTON, load)
 
-saveButton = wx.Button(bkg, label='Save')
-saveButton.Bind(wx.EVT_BUTTON, save)
+SAVE_BUTTON = wx.Button(BKG, label='Save')
+SAVE_BUTTON.Bind(wx.EVT_BUTTON, save)
 
-filename = wx.TextCtrl(bkg)
-contents = wx.TextCtrl(bkg, style=wx.TE_MULTILINE | wx.HSCROLL)
+FILENAME = wx.TextCtrl(BKG)
+CONTENTS = wx.TextCtrl(BKG, style=wx.TE_MULTILINE | wx.HSCROLL)
 
-hbox = wx.BoxSizer()
-hbox.Add(filename, proportion=1, flag=wx.EXPAND)
-hbox.Add(loadButton, proportion=0, flag=wx.LEFT, border=5)
-hbox.Add(saveButton, proportion=0, flag=wx.LEFT, border=5)
+HBOX = wx.BoxSizer()
+HBOX.Add(FILENAME, proportion=1, flag=wx.EXPAND)
+HBOX.Add(LOAD_BUTTON, proportion=0, flag=wx.LEFT, border=5)
+HBOX.Add(SAVE_BUTTON, proportion=0, flag=wx.LEFT, border=5)
 
-vbox = wx.BoxSizer(wx.VERTICAL)
-vbox.Add(hbox, proportion=0, flag=wx.EXPAND | wx.ALL, border=5)
-vbox.Add(contents, proportion=1,
+VBOX = wx.BoxSizer(wx.VERTICAL)
+VBOX.Add(HBOX, proportion=0, flag=wx.EXPAND | wx.ALL, border=5)
+VBOX.Add(CONTENTS, proportion=1,
          flag=wx.EXPAND | wx.LEFT | wx.BOTTOM | wx.RIGHT, border=5)
 
-bkg.SetSizer(vbox)
-win.Show()
+BKG.SetSizer(VBOX)
+WIN.Show()
 
-app.MainLoop()
+APP.MainLoop()
