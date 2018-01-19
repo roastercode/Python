@@ -1,29 +1,16 @@
 #!/usr/bin/env python
-''' snmp test
-test things in python arround the snmp library '''
-
-
-#import string
-#import re
-import sys
-import pysnmp
-#import socket
-#import pysnmp
-#from pysnmp import *
+''' snmp test '''
 
 
 def getline():
-    ''' read line from sys  '''
     return sys.stdin.readline().strip()
 
 
 def output(line):
-    ''' print the output '''
     sys.stdout.write(line + "\n")
     sys.stdout.flush()
 
     def main():
-        ''' print line definition '''
         logger.info("starting pass_persist daemon")
 
         try:

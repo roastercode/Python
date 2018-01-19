@@ -16,7 +16,7 @@ import math
 import datetime
 
 # print documentation about print
-help(print)
+help print()
 
 # Print the explanation
 print('This place is made for experimentations!')
