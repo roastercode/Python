@@ -33,10 +33,10 @@
 import sys
 import math
 from operator import itemgetter
+import os #<-
+os.environ["SDL_VIDEODRIVER"] = "dummy" #<-
 import pygame
 print(sys.path)
-#import os
-#os.environ["SDL_ViDEODRIVER"] = "dummy"
 
 
 class Point3D(object):
