@@ -4,6 +4,7 @@
 """ This module is for test """
 
 import wx
+impo 
 
 def load(event):
     file = open(FILENAME.GetValue())

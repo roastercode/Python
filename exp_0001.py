@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # License    : GNU GPL v3 or later
 # Author     : Aurélien DESBRIERES
@@ -16,7 +16,7 @@ import math
 import datetime
 
 # print documentation about print
-help print()
+help(print)
 
 # Print the explanation
 print('This place is made for experimentations!')
@@ -51,15 +51,3 @@ LAUNCH_DATETIME = datetime.datetime(2017, 11, 1, 10, 00, 0)
 print(LAUNCH_TIME)
 print(LAUNCH_DATE)
 print(LAUNCH_DATETIME)
-
-# get current day time
-NOW = datetime.datetime.today()
-print(NOW) # will print time with microsecond
-
-# print current time without microsecond and without the T
-NOW_WITHOUT_MICROSECOND = datetime.datetime.now().replace(microsecond=0).isoformat(' ')
-print(NOW_WITHOUT_MICROSECOND)
-
-# print today with datetime.datetime.today
-TODAY = datetime.datetime.today()
-print(TODAY)
